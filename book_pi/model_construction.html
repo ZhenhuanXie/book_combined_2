@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Model Construction &#8212; Stochastic Growth and Long-Run Risk</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -33,21 +34,21 @@
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe,.cell"
         const thebe_selector_input = "pre,.cell_input div.highlight"
         const thebe_selector_output = ".output,.cell_output"
@@ -55,8 +56,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="User Interface" href="notebook1.html" />
-    <link rel="prev" title="Stochastic Growth and Long-Run Risk" href="intro.html" />
+    <link rel="next" title="User interface" href="notebook1.html" />
+    <link rel="prev" title="Permanent income model" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -89,7 +90,7 @@
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../book_ac/intro.html">
-   Stochastic Growth and Long-Run Risk
+   AK model with adjustment cost
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -104,7 +105,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../book_ac/notebook1.html">
-     User Interface
+     User interface
     </a>
    </li>
    <li class="toctree-l2">
@@ -116,7 +117,7 @@
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="intro.html">
-   Stochastic Growth and Long-Run Risk
+   Permanent income model
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -131,12 +132,12 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="notebook1.html">
-     User Interface
+     User interface
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="notebook2.html">
-     Code Details
+     Code details
     </a>
    </li>
    <li class="toctree-l2">
@@ -211,11 +212,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/ZhenhuanXie/book_combined"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/ZhenhuanXie/book_combined_2"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ZhenhuanXie/book_combined/issues/new?title=Issue%20on%20page%20%2Fbook_pi/model_construction.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ZhenhuanXie/book_combined_2/issues/new?title=Issue%20on%20page%20%2Fbook_pi/model_construction.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -236,7 +237,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/ZhenhuanXie/book_combined/master?urlpath=tree/book_pi/model_construction.md"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ZhenhuanXie/book_combined_2/master?urlpath=tree/book_pi/model_construction.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -292,9 +293,9 @@
         
               <div>
                 
-  <div class="section" id="model-construction">
+  <section id="model-construction">
 <span id="pi-model"></span><h1>Model Construction<a class="headerlink" href="#model-construction" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="preference-recursive-utility-with-habit-persistence">
+<section id="preference-recursive-utility-with-habit-persistence">
 <h2>Preference: Recursive Utility with Habit Persistence<a class="headerlink" href="#preference-recursive-utility-with-habit-persistence" title="Permalink to this headline">¶</a></h2>
 <p>We introduce <span class="math notranslate nohighlight">\(U_t\)</span> via a CES aggregator of current consumption <span class="math notranslate nohighlight">\(C_t\)</span> and a household stock variable <span class="math notranslate nohighlight">\(H_t\)</span>. <span class="math notranslate nohighlight">\(H_t\)</span>, which is a geometrically weighted average of current and past consumptions and the initial <span class="math notranslate nohighlight">\(H_0\)</span>, can be interpreted either as habits or as durable goods.</p>
 <p>A representative household ranks <span class="math notranslate nohighlight">\(\{U_t: t\geq 0\}\)</span> processes with a utility functional <span class="math notranslate nohighlight">\(\{V_t: t\geq 0\}\)</span> processes. We also introduce an <span class="math notranslate nohighlight">\(\{R_t: t\geq 0\}\)</span> process as a risk adjusted version of  <span class="math notranslate nohighlight">\(\{V_t: t\geq 0\}\)</span>, called a certainty equivalent. <span class="math notranslate nohighlight">\(V_t\)</span>, <span class="math notranslate nohighlight">\(R_t\)</span>, <span class="math notranslate nohighlight">\(U_t\)</span> and <span class="math notranslate nohighlight">\(H_t\)</span> are defined via the following recursion:</p>
@@ -328,8 +329,8 @@
 <div class="math notranslate nohighlight" id="equation-pi-h-balanced">
 <span class="eqno">(14)<a class="headerlink" href="#equation-pi-h-balanced" title="Permalink to this equation">¶</a></span>\[    \frac{H_{t+1}}{Y_{t+1}}\frac{Y_{t+1}}{Y_t}  = \chi \frac{H_t}{Y_t} + (1-\chi) \frac{C_t}{Y_t}\]</div>
 <p>The reciprocal of the parameter <span class="math notranslate nohighlight">\(\rho\)</span> describes the consumer’s attitudes toward intertemporal substitution, while the parameter <span class="math notranslate nohighlight">\(\gamma\)</span> describes the consumer’s attitudes toward risk.</p>
-</div>
-<div class="section" id="technology-ak-with-non-financial-income">
+</section>
+<section id="technology-ak-with-non-financial-income">
 <h2>Technology: AK with Non-Financial Income<a class="headerlink" href="#technology-ak-with-non-financial-income" title="Permalink to this headline">¶</a></h2>
 <p>We construct a nonlinear version of a permanent income technology in the spirit of <span id="id1">Hansen <em>et al.</em> [<a class="reference internal" href="../reference.html#id3">1999</a>]</span> and <span id="id2">Hansen and Sargent [<a class="reference internal" href="../reference.html#id5">2013</a>]</span> that assumes the consumer’s non-financial income process <span class="math notranslate nohighlight">\(\left\{Y_t\right\}\)</span> is an exogenous multiplicative functional.</p>
 <div class="math notranslate nohighlight">
@@ -370,8 +371,8 @@
 <img alt="../_images/model_construction_1_0.png" src="../_images/model_construction_1_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="stochastic-discount-factor-foc-on-investment">
+</section>
+<section id="stochastic-discount-factor-foc-on-investment">
 <h2>Stochastic Discount Factor; FOC on investment<a class="headerlink" href="#stochastic-discount-factor-foc-on-investment" title="Permalink to this headline">¶</a></h2>
 <p>SDF increment in units of <span class="math notranslate nohighlight">\(U_t\)</span>:</p>
 <div class="math notranslate nohighlight">
@@ -398,18 +399,18 @@
 <p>FOC on investment:</p>
 <div class="math notranslate nohighlight" id="equation-pi-foc">
 <span class="eqno">(22)<a class="headerlink" href="#equation-pi-foc" title="Permalink to this equation">¶</a></span>\[    \log\mathbb{E}\left[\left(1+ {\sf a}\right)\frac{S_{t+1}}{S_t}\Biggl| {\mathfrak F}_t\right] = 0 \label{foc}\]</div>
-</div>
-<div class="section" id="summary">
+</section>
+<section id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <p>The permanent income model that we study here consists of equations <a class="reference internal" href="#equation-pi-v-balanced">(11)</a> to <a class="reference internal" href="#equation-pi-h-balanced">(14)</a> that describe the representative consumer’s <strong>preferences</strong>, equation <a class="reference internal" href="#equation-pi-mcmu-external">(19)</a> (or <a class="reference internal" href="#equation-pi-mcmu-internal">(20)</a> and <a class="reference internal" href="#equation-pi-mhmu">(21)</a>) that describes <strong>habit persistence</strong>, equation <a class="reference internal" href="#equation-pi-foc">(22)</a> that describes the <strong>FOC on investment</strong>, equation <a class="reference internal" href="#equation-pi-k-balanced">(15)</a> that restricts <strong>feasibility</strong>, <a class="reference internal" href="#equation-pi-y-log-growth">(17)</a> and <a class="reference internal" href="#equation-pi-exogenous">(18)</a> that describe the evolution of the consumer’s <strong>non-financial income process</strong> <span class="math notranslate nohighlight">\(\left\{Y_t\right\}\)</span>.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "ZhenhuanXie/book_combined",
+            repo: "ZhenhuanXie/book_combined_2",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -439,7 +440,7 @@
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Stochastic Growth and Long-Run Risk</p>
+                <p class="prevnext-title">Permanent income model</p>
             </div>
         </a>
     </div>
@@ -447,7 +448,7 @@
         <a class="right-next" href="notebook1.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">User Interface</p>
+                <p class="prevnext-title">User interface</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

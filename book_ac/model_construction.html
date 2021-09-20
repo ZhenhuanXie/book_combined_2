@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Model construction &#8212; Stochastic Growth and Long-Run Risk</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -33,21 +34,21 @@
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe,.cell"
         const thebe_selector_input = "pre,.cell_input div.highlight"
         const thebe_selector_output = ".output,.cell_output"
@@ -55,8 +56,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="User Interface" href="notebook1.html" />
-    <link rel="prev" title="Stochastic Growth and Long-Run Risk" href="intro.html" />
+    <link rel="next" title="User interface" href="notebook1.html" />
+    <link rel="prev" title="AK model with adjustment cost" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -89,7 +90,7 @@
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="intro.html">
-   Stochastic Growth and Long-Run Risk
+   AK model with adjustment cost
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -104,7 +105,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="notebook1.html">
-     User Interface
+     User interface
     </a>
    </li>
    <li class="toctree-l2">
@@ -116,7 +117,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../book_pi/intro.html">
-   Stochastic Growth and Long-Run Risk
+   Permanent income model
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -131,12 +132,12 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../book_pi/notebook1.html">
-     User Interface
+     User interface
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../book_pi/notebook2.html">
-     Code Details
+     Code details
     </a>
    </li>
    <li class="toctree-l2">
@@ -211,11 +212,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/ZhenhuanXie/book_combined"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/ZhenhuanXie/book_combined_2"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ZhenhuanXie/book_combined/issues/new?title=Issue%20on%20page%20%2Fbook_ac/model_construction.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ZhenhuanXie/book_combined_2/issues/new?title=Issue%20on%20page%20%2Fbook_ac/model_construction.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -236,7 +237,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/ZhenhuanXie/book_combined/master?urlpath=tree/book_ac/model_construction.md"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ZhenhuanXie/book_combined_2/master?urlpath=tree/book_ac/model_construction.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -311,11 +312,11 @@
         
               <div>
                 
-  <div class="section" id="model-construction">
+  <section id="model-construction">
 <span id="ac-model"></span><h1>Model construction<a class="headerlink" href="#model-construction" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="preference-recursive-utility">
+<section id="preference-recursive-utility">
 <span id="ac-model-preference"></span><h2>Preference: Recursive utility<a class="headerlink" href="#preference-recursive-utility" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="without-household-capital">
+<section id="without-household-capital">
 <span id="ac-model-preference-nocapital"></span><h3>Without household capital<a class="headerlink" href="#without-household-capital" title="Permalink to this headline">¶</a></h3>
 <p>This is a special case of more general recursive preference, where there’s no habits or durable goods. We take a consumption process <span class="math notranslate nohighlight">\(\{C_t\}\)</span> as an input into <span class="math notranslate nohighlight">\(\{R_t, V_t\}\)</span> processes that we define via backward recursion:</p>
 <div class="math notranslate nohighlight">
@@ -339,8 +340,8 @@
 \[    \frac{V_t}{C_tD_t} = \left[(1-\beta)+\beta\left(\frac{R_t}{C_tD_t}\right)^{1-\rho}\right]^{\frac{1}{1-\rho}}\]</div>
 <div class="math notranslate nohighlight">
 \[    \frac{R_t}{C_tD_t} = \mathbb{E}\left[\left(\frac{V_{t+1}}{C_tD_t}\right)^{1-\gamma} | {\mathfrak F}_t\right]^{\frac{1}{1-\gamma}}\]</div>
-</div>
-<div class="section" id="with-household-capital">
+</section>
+<section id="with-household-capital">
 <span id="ac-model-preference-capital"></span><h3>With household capital<a class="headerlink" href="#with-household-capital" title="Permalink to this headline">¶</a></h3>
 <p>This is a more general framework of recursive preference, where we introduce <span class="math notranslate nohighlight">\(U_t\)</span> via a CES aggregator of current consumption <span class="math notranslate nohighlight">\(C_t\)</span> and a household stock variable <span class="math notranslate nohighlight">\(H_t\)</span>. <span class="math notranslate nohighlight">\(H_t\)</span> can be interpreted either as habits or as durable goods. It will be clear that <span class="math notranslate nohighlight">\(H_t\)</span> is a geometrically weighted average of current and past consumptions, and the initial <span class="math notranslate nohighlight">\(H_0\)</span>.</p>
 <p>Now, <span class="math notranslate nohighlight">\(H_0\)</span> and <span class="math notranslate nohighlight">\(\{C_t\}\)</span> are taken as inputs to form <span class="math notranslate nohighlight">\(\{U_t\}\)</span> process, and <span class="math notranslate nohighlight">\(\{U_t\}\)</span> is used as an input into <span class="math notranslate nohighlight">\(\{R_t, V_t\}\)</span> processes via the recursion below:</p>
@@ -368,9 +369,9 @@
 <p>In the special case of <span class="math notranslate nohighlight">\(\epsilon = 1\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[    \frac{U_t}{H_t} = \left(\frac{C_t}{H_t}\right)^{1-\alpha}\]</div>
-</div>
-</div>
-<div class="section" id="technology-ak-with-adjustment-cost">
+</section>
+</section>
+<section id="technology-ak-with-adjustment-cost">
 <span id="ac-model-constraint"></span><h2>Technology: AK with adjustment cost<a class="headerlink" href="#technology-ak-with-adjustment-cost" title="Permalink to this headline">¶</a></h2>
 <p>We consider an <span class="math notranslate nohighlight">\(AK\)</span> model with adjustment costs and state dependent growth <span class="math notranslate nohighlight">\(G\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-ac-feasibility">
@@ -400,10 +401,10 @@
 <div class="math notranslate nohighlight">
 \[    \log D_{t+1} - \log D_t = \mathbb{U}_d \cdot Z_t + \sigma_d \cdot W_{t+1}\]</div>
 <p><span class="math notranslate nohighlight">\(\mathbb{U}_d \cdot Z_t\)</span> shifts the growth rate in preference, so it is also a source of “long run risk”.</p>
-</div>
-<div class="section" id="stochastic-discount-factor-foc-on-investment">
+</section>
+<section id="stochastic-discount-factor-foc-on-investment">
 <h2>Stochastic Discount Factor; FOC on investment<a class="headerlink" href="#stochastic-discount-factor-foc-on-investment" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="no-household-capital">
+<section id="no-household-capital">
 <h3>No household capital<a class="headerlink" href="#no-household-capital" title="Permalink to this headline">¶</a></h3>
 <p>The preferences described in <a class="reference internal" href="#ac-model-preference"><span class="std std-ref">Preference: Recursive utility</span></a> imply that the time <span class="math notranslate nohighlight">\(t+1\)</span> multiplicative increment to the consumer’s stochastic discount factor is (in units of <span class="math notranslate nohighlight">\(C_t\)</span>):</p>
 <div class="math notranslate nohighlight">
@@ -420,8 +421,8 @@
 <div class="math notranslate nohighlight">
 \[    \frac{S_{t+1}}{S_t} = \beta \left(\frac{V_{t+1}}{R_t}\right)^{1-\gamma} \left(\frac{V_{t+1}}{R_t}\right)^{\rho-1} \left(\frac{C_{t+1}}{C_t}\right)^{-\rho} \left(\frac{D_{t+1}}{D_t}\right)^{1-\rho}\]</div>
 </font>
-</div>
-<div class="section" id="id1">
+</section>
+<section id="id1">
 <h3>With household capital<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Now we follow the preferences described in <a class="reference internal" href="#ac-model-preference-capital"><span class="std std-ref">With household capital</span></a> instead.</p>
 <p>SDF increment in units of <span class="math notranslate nohighlight">\(U_t\)</span>:</p>
@@ -440,15 +441,15 @@
 <div class="math notranslate nohighlight" id="equation-ac-foc">
 <span class="eqno">(9)<a class="headerlink" href="#equation-ac-foc" title="Permalink to this equation">¶</a></span>\[\log \mathbb{E}\left[\frac{S_{t+1}}{S_t}\frac{MK_{t+1}}{MC_{t+1}}\psi \left(I_t, K_t, Z_t\right) \Biggl| {\mathfrak F}_t \right] = 0\]</div>
 <p>where <span class="math notranslate nohighlight">\(MC_{t+1} = (1-\beta)C_{t+1}^{-\rho}V_{t+1}^\rho\)</span> and <span class="math notranslate nohighlight">\(\color{red}{MK_{t+1} = \frac{V_{t+1}}{K_{t+1}} - MH_{t+1}\frac{H_{t+1}}{K_{t+1}}}\)</span> are the date <span class="math notranslate nohighlight">\(t+1\)</span> marginal value of consumption and marginal value of capital, respectively; <span class="math notranslate nohighlight">\(\psi = - \frac{dK_{t+1}/K_t}{dC_t} = \phi_1 \phi_2 [1+\phi_2 (\frac{I_t}{K_t})^{\phi_1-1}]G_{t+1}\)</span>. <font color='red'>NB: <span class="math notranslate nohighlight">\(MK_{t+1}\)</span> here is different from that in Section 1.4.1.</font></p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "ZhenhuanXie/book_combined",
+            repo: "ZhenhuanXie/book_combined_2",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -478,7 +479,7 @@
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Stochastic Growth and Long-Run Risk</p>
+                <p class="prevnext-title">AK model with adjustment cost</p>
             </div>
         </a>
     </div>
@@ -486,7 +487,7 @@
         <a class="right-next" href="notebook1.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">User Interface</p>
+                <p class="prevnext-title">User interface</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
