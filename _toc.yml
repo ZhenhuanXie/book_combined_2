@@ -1,0 +1,15 @@
+format: jb-book
+root: intro
+chapters:
+  - file: book_ac/intro
+    sections:
+    - file: book_ac/model_construction
+    - file: book_ac/notebook1
+    - file: book_ac/notebook2
+  - file: book_pi/intro
+    sections:
+    - file: book_pi/model_construction
+    - file: book_pi/notebook1
+    - file: book_pi/notebook2
+    - file: book_pi/special_issue
+  - file: reference
